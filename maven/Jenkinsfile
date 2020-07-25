@@ -15,7 +15,7 @@ pipeline
                     }
                     catch(Exception e1)
                     {
-                        mail bcc: '', body: 'Jenkins is unable to download the code froom remote git server', cc: '', from: '', replyTo: '', subject: 'Download failed', to: 'git.team@gmail.com'
+                        mail bcc: '', body: 'Jenkins is unable to download the code from remote git server', cc: '', from: '', replyTo: '', subject: 'Download failed', to: 'git.team@gmail.com'
                         exit(1)
                     }
                 }
@@ -34,7 +34,7 @@ pipeline
                     }
                     catch(Exception e2)
                     {
-                        mail bcc: '', body: 'Jenkins is unable to create an artifact from the code', cc: '', from: '', replyTo: '', subject: 'Build failed', to: 'developement.team@gmail.com'
+                        mail bcc: '', body: 'Jenkins is unable to creates an artifact from the code', cc: '', from: '', replyTo: '', subject: 'Build failed', to: 'developement.team@gmail.com'
                         exit(1)
                     }
                 }
